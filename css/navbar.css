@@ -1,0 +1,78 @@
+/* Navbar background */
+.navbar-custom {
+  background-color: #880E4F; /* deep dark pink */
+  box-shadow: 0 2px 10px rgba(136, 14, 79, 0.3);
+}
+
+/* Navbar brand and nav links */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .dropdown-toggle {
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Hover effect on nav links */
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-toggle:hover {
+  color: #FFD6E8;
+  background-color: transparent;
+}
+
+/* Active nav link */
+.navbar-custom .nav-link.active {
+  color: #FFD6E8;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Navbar toggler (hamburger) */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Dropdown menu */
+.navbar-custom .dropdown-menu {
+  background-color: #880E4F;
+  border: none;
+  border-radius: 8px;
+}
+
+.navbar-custom .dropdown-item {
+  color: #fff;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #c2185b;
+  color: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .navbar-custom .navbar-nav {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .navbar-custom .nav-link {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-custom .nav-link:last-child {
+    border-bottom: none;
+  }
+}

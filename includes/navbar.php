@@ -1,0 +1,1 @@
+<!-- This file can be removed as navbar is now in header.php -->

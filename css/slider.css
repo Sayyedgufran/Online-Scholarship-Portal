@@ -1,0 +1,144 @@
+/* ============================================= */
+/* SLIDER STYLING - Left to Right Slide Effect */
+/* ============================================= */
+
+/* Main Slider Container */
+#scholarshipCarousel {
+  width: 98%;
+  max-width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(194, 24, 91, 0.4);
+  margin: 0 auto;
+}
+
+/* Caption styling for image overlay */
+.carousel-caption {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: auto;
+  bottom: auto;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 40%;
+  color: white;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* Carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+  background-size: 100%, 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #fff;
+  border: 2px solid transparent;
+}
+
+.carousel-indicators .active {
+  background-color: #c2185b;
+  border-color: #fff;
+}
+
+/* ============================================= */
+/* LEFT TO RIGHT SLIDE EFFECT - Fade effect ko replace karo */
+/* ============================================= */
+
+/* Remove all fade animation */
+.carousel-fade .carousel-item {
+  display: none;
+}
+
+/* Left to Right Slide Animation */
+.carousel-item {
+  display: block;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+  transform: translateX(-100%);
+}
+
+/* Active slide always visible */
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item.active {
+  transform: translateX(0);
+}
+
+/* Smooth transition */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .carousel-caption {
+    max-width: 80%;
+    left: 5%;
+    top: 10%;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  
+  #scholarshipCarousel img {
+    height: 300px !important;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}

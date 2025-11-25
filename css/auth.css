@@ -1,0 +1,192 @@
+/* ================================
+   ===== Register Page CSS ========
+   ================================ */
+
+body.register-bg {
+    background: linear-gradient(to right, #ff4081, #c2185b);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+}
+
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.register-card h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #c2185b;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.btn-register {
+    background-color: #c2185b;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.btn-register:hover {
+    background-color: #9e0045;
+    color: white;
+}
+
+.register-card p a {
+    color: #c2185b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-card p a:hover {
+    text-decoration: underline;
+}
+
+/* Form controls */
+.register-card .form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.register-card .form-control:focus {
+    border-color: #c2185b;
+    box-shadow: 0 0 0 0.2rem rgba(194, 24, 91, 0.25);
+}
+
+.register-card .form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+/* =============================
+   ===== Login Page CSS ========
+   ============================= */
+
+body.login-bg {
+    background: linear-gradient(to right, #dc143c, #c2185b);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.login-card h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #c2185b;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.btn-login {
+    background-color: #c2185b;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.btn-login:hover {
+    background-color: #9e0045;
+    color: white;
+}
+
+.login-card p a {
+    color: #c2185b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-card p a:hover {
+    text-decoration: underline;
+}
+
+/* Form controls */
+.login-card .form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.login-card .form-control:focus {
+    border-color: #c2185b;
+    box-shadow: 0 0 0 0.2rem rgba(194, 24, 91, 0.25);
+}
+
+.login-card .form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+/* Select dropdown styling */
+.form-select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #c2185b;
+    box-shadow: 0 0 0 0.2rem rgba(194, 24, 91, 0.25);
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+    .register-card,
+    .login-card {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .register-card h3,
+    .login-card h3 {
+        font-size: 1.5rem;
+    }
+}
